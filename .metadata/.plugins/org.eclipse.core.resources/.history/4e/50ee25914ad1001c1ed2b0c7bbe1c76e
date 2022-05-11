@@ -1,0 +1,16 @@
+package br.com.alura.microservice.loja.configuration;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Configuration;
+
+import com.netflix.discovery.DiscoveryClient;
+
+@Configuration
+public class DiscoveryClientConfig {
+
+	
+	private DiscoveryClient getDiscoveryClient() {
+		return new DiscoveryClient();
+	}
+
+}
